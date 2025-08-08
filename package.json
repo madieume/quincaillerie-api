@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "postinstall": "node node_modules/.bin/prisma generate",
-    "build": "node node_modules/.bin/prisma migrate deploy",
+    "postinstall": "npx prisma generate",  
+    "build": "npx prisma migrate deploy",
     "start": "node src/server.js"
   },
   "dependencies": {
