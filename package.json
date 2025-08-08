@@ -2,11 +2,11 @@
   "name": "quincaillerie-api",
   "version": "1.0.0",
   "main": "src/server.js",
-"scripts": {
-  "postinstall": "npx --unsafe-perm prisma generate",
-  "build": "npx --unsafe-perm prisma generate && npx prisma migrate deploy",
-  "start": "node src/server.js"
-},
+  "scripts": {
+    "postinstall": "prisma generate",
+    "build": "prisma migrate deploy",
+    "start": "node src/server.js"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "dotenv": "^16.3.1",
@@ -15,10 +15,10 @@
     "jsonwebtoken": "^9.0.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
-    "prisma": "^5.22.0",
     "@prisma/client": "^5.22.0"
   },
   "devDependencies": {
+    "prisma": "^5.22.0",
     "nodemon": "^3.0.1"
   },
   "engines": {
