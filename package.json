@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/server.js",
 "scripts": {
-  "postinstall": "npx prisma generate",
-  "build": "npx prisma migrate deploy",
+  "postinstall": "npx --unsafe-perm prisma generate",
+  "build": "npx --unsafe-perm prisma generate && npx prisma migrate deploy",
   "start": "node src/server.js"
 },
   "dependencies": {
