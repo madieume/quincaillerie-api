@@ -2,8 +2,9 @@
   "name": "quincaillerie-api",
   "version": "1.0.0",
   "main": "src/server.js",
- "scripts": {
-  "build": "prisma generate && prisma migrate deploy",
+"scripts": {
+  "postinstall": "npx prisma generate",
+  "build": "npx prisma migrate deploy",
   "start": "node src/server.js"
 },
   "dependencies": {
